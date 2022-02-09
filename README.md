@@ -4,10 +4,16 @@ Minimal container to run co-mirror where dependencies are an issue/disconnected.
 
 Tested on rhel 8.5/Fedora 34 not subscribed, glibc version not availible. requires 2.32+ only 2.28 availilbe on system
 
-# pre-reqs:
+The workdir/user for the container is set to root, just to try and simply the volume mounts
+
+# pre-reqs
 
 - System with podman
 - [Valid Pull Secret]
+
+## Pull from quay.io
+
+```podman pull quay.io/mriensch/oc-mirror-container```
 
 ## Build
 
